@@ -28,16 +28,15 @@ class Ponto
 public static void  main (String [] args){
  Ponto p1=new Ponto();
  p1.setX(10);
- p1.setY(20);
+ p1.setY(30);
  Ponto p2=new Ponto();
  p2.setX(15);
- p2.setY(30);
-Ponto p3= new Ponto();
- p3.setX(50);
- p3.setY(70);
-p3=p1;
-System.out.println (p1.getX()+" "+p1.getY());
-System.out.println (p2.getX()+" "+p2.getY());
-System.out.println (p3.getX()+" "+p3.getY());
+ p2.setY(20);
+double c1,c2,q,d;
+c1=p1.getY()-p2.getY();
+c2=p2.getX()-p1.getX();
+q=Math.pow(c1,2)+Math.pow(c2,2);
+d=Math.sqrt(q);  
+System.out.println (d);
 }
 }
